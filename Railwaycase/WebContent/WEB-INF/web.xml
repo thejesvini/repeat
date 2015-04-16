@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Railwaycase</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+      </welcome-file-list>
+
+ <servlet>
+    <servlet-name>traindetailscontroller</servlet-name>
+    <servlet-class>com.rail.controller.TrainDetailsController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>traindetailscontroller</servlet-name>
+    <url-pattern>/TrainDetailsController</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>ticketcontroller</servlet-name>
+    <servlet-class>com.rail.controller.InsertController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ticketcontroller</servlet-name>
+    <url-pattern>/InsertController</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>ticketdetailscontroller</servlet-name>
+    <servlet-class>com.rail.controller.TicketDetailsController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ticketdetailscontroller</servlet-name>
+    <url-pattern>/TicketDetailsController</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>coachdetailscontroller</servlet-name>
+    <servlet-class>com.rail.controller.CoachDetailsController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>coachdetailscontroller</servlet-name>
+    <url-pattern>/CoachDetailsController</url-pattern>
+  </servlet-mapping>
+
+</web-app>
